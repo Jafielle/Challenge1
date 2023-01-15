@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="reset.css">
+      <link rel="stylesheet" href="style.css">
+      <title>Encriptador</title>
+</head>
+
+<body>
+      <!--  https://www.youtube.com/watch?v=CHJqmdyyzdQ     
+      -->
+      <header>
+            <img src="img/Logo.png" alt="logo Alura" id="logo">
+      </header>
+
+      <main>
+            <section class="section1">
+                  <textarea name="textarea" id="area" placeholder="Ingrese el texto aquí" autofocus></textarea>
+                  <label for="textarea">&#x26A0 Solo letras minúsculas y sin acentos</label>
+                  <div class="container-btn">
+                        <input type="button" class="button" id="encriptar" value="Encriptar">
+                        <input type="button" class="button" id="desencriptar" value="Desencriptar">
+                  </div>
+
+            </section>
+            <section class="section2">
+                  <div class="container-pj">
+                        <img src="img/Muñeco.png" alt="Alura pj" id="pj">
+                  </div>
+                  <div class="container-h2">
+                        <h2>Ningún mensaje fue encontrado</h2>
+                  </div>
+                  <div class="container-p">
+                        <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                  </div>
+                  <div class="output">
+                        <h2>Mensaje encriptado:</h2>
+                        <p class="output-txt" id="to-copy"></p>
+                        <div class="container-btn copiar-btn">
+                              <input type="button" class="button" id="copiar" value="Copiar">
+                        </div>
+                  </div>
+            </section>
+      </main>
+      <footer>Alura Challenge 1. Creado por Abril Gómez</footer>
+
+      <script src="script.js"></script>
+</body>
+
+</html>

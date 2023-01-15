@@ -1,0 +1,203 @@
+/*Base Desktop*/
+
+body {
+      height: 100vh;
+      background-color: #EFF1FA;
+}
+
+header {
+      width: 100%;
+      height: 70px;
+}
+
+#logo {
+      margin-top: 1em;
+      margin-left: 2.5em;
+}
+
+main {
+      width: 100%;
+      height: calc(100vh - 120px);
+      /*background-color: brown;*/
+      display: flex;
+      justify-content: center;
+}
+
+section {
+      width: 100%;
+      height: 90%;
+      /*background-color: lightcoral;*/
+}
+
+.section1 {
+      width: 50%;
+      margin: auto;
+      margin-top: 2rem;
+      margin-left: 15%;
+}
+
+#area {
+      width: 100%;
+      height: 70%;
+      display: block;
+      margin: auto;
+      margin-top: 1rem;
+      resize: none;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #0A3871;
+      font-size: 2.5em;
+}
+
+::placeholder {
+      color: #0A3871;
+}
+
+label {
+      width: 80%;
+      margin: auto;
+      color: #495057;
+}
+
+.container-btn {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+}
+
+.button {
+      width: 18vw;
+      height: 35px;
+      border-radius: 50px;
+      border-color: #0A3871;
+}
+
+.button:hover {
+      width: 18.5vw;
+      height: 40px;
+}
+
+.button:active {
+      border-color: #D8DFE8;
+}
+
+#encriptar {
+      color: #EFF1FA;
+      background-color: #0A3871;
+}
+
+#desencriptar {
+      color: #0A3871;
+      background-color: #E9ECF8;
+}
+
+#encriptar:active,
+#desencriptar:active {
+      color: #ADB5BD;
+}
+
+#copiar {
+      color: #0A3871;
+      background-color: #CED4DA;
+}
+
+#copiar:active {
+      color: #F3F5FC;
+}
+
+
+.section2 {
+      width: 22%;
+      height: 100%;
+      background-color: white;
+      border-radius: 20px;
+      margin-top: -2.5%;
+      margin-right: 10%;
+      margin-left: 10%;
+      box-sizing: border-box;
+      overflow: hidden;
+}
+
+.container-pj {
+      width: 100%;
+      height: auto;
+}
+
+#pj {
+      width: 80%;
+      height: auto;
+      display: block;
+      margin-top: 20%;
+      margin-bottom: 20%;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+.container-h2 {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      padding-top: 1rem;
+      margin: 0;
+}
+
+h2 {
+      color: #343A40;
+      font-weight: bold;
+      font-size: large;
+}
+
+.container-p {
+      width: 100%;
+      height: 10%;
+      text-align: center;
+      padding-top: 1rem;
+      margin-bottom: 50%;
+}
+
+.output {
+      width: 100%;
+      height: 70%;
+      margin-top: 20%;
+      text-align: center;
+}
+
+.output p {
+      width: 100%;
+      height: 85%;
+      margin-top: 1rem;
+}
+
+.copiar-btn {
+      width: 100%;
+      height: 20%;
+      justify-content: center;
+}
+
+#copiar {
+      margin-top: 1.7rem;
+}
+
+footer {
+      width: 100%;
+      height: 50px;
+      background-color: #AAB2D5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #EFF1FA;
+}
+
+.hide {
+      display: none;
+}
+
+
+/* A crear el responsive!*/
+
+
+/*Tablet*/
+
+
+/*Movil device*/
