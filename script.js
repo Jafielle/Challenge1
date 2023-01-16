@@ -5,7 +5,10 @@ const copyBtn = document.querySelector("#copiar");
 const containerPj = document.querySelector(".container-pj");
 const containerH2 = document.querySelector(".container-h2");
 const containerP = document.querySelector(".container-p");
-const outputTxt = document.querySelector('.output-txt')
+
+const output = document.querySelector('.output');
+
+const outputTxt = document.querySelector('.output-txt');
 
 //Buttons functionalities / Funcionalidades de los botones
 encryptBtn.onclick = encrypt;
@@ -24,6 +27,7 @@ function hideFront() {
       containerPj.classList.add("hide");
       containerH2.classList.add("hide");
       containerP.classList.add("hide");
+      output.classList.remove("hide");
 }//to hide the image and text and show the (en/de)crypt results and copy button / Para esconder al imagen, texto y enseñar el resultado (des)encriptado y el boton de copiar
 
 function encryptTxt(msg) {
@@ -106,7 +110,7 @@ function copy() {
 } 
 //from https://stackoverflow.com/questions/60217202/copy-text-to-clipboard-now-that-execcommandcopy-is-obsolete
 
-//function copy() { let copyText = document.querySelector("#to-copy"); copyText.select(); document.execCommand("copy"); } Deprecated
+//Document.execCommand("copy") Deprecated
 
 
 

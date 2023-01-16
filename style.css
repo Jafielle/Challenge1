@@ -18,7 +18,6 @@ header {
 main {
       width: 100%;
       height: calc(100vh - 120px);
-      /*background-color: brown;*/
       display: flex;
       justify-content: center;
 }
@@ -26,7 +25,6 @@ main {
 section {
       width: 100%;
       height: 90%;
-      /*background-color: lightcoral;*/
 }
 
 .section1 {
@@ -72,12 +70,12 @@ label {
       border-radius: 50px;
       border-color: #0A3871;
       transition: 0.3s;
-      
+
 }
 
 .button:hover {
       transform: scale(1.1);
-      
+
 }
 
 .button:active {
@@ -200,6 +198,24 @@ footer {
 
 
 /*Tablet*/
+
+/*@media screen and (max-width: 768px) {
+      body {
+            background-color: red;
+      }
+}
+
+
+
+/*@media (orientation: landscape) {
+      body {
+
+            background-color: purple;
+      }
+}
+
+@media (orientation: portrait) {}
+
 
 
 /*Movil device*/
