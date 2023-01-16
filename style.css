@@ -71,11 +71,13 @@ label {
       height: 35px;
       border-radius: 50px;
       border-color: #0A3871;
+      transition: 0.3s;
+      
 }
 
 .button:hover {
-      width: 18.5vw;
-      height: 40px;
+      transform: scale(1.1);
+      
 }
 
 .button:active {
