@@ -145,7 +145,7 @@ label {
 h2 {
       color: #343A40;
       font-weight: bold;
-      font-size: large;
+      font-size: 1.5em;
 }
 
 .container-p {
@@ -154,7 +154,8 @@ h2 {
       text-align: center;
       padding-top: 1rem;
       margin-bottom: 50%;
-}
+      font-size: 1em;
+}/*hice cambio*/
 
 .output {
       width: 100%;
@@ -199,9 +200,45 @@ footer {
 
 /*Tablet*/
 
-/*@media screen and (max-width: 768px) {
-      body {
-            background-color: red;
+@media (max-width: 912px) {
+      main {
+            flex-direction: column;
+            justify-content: center;
+      }
+
+      .section1 {
+            width: 90%;
+            height: 70%;
+            margin-left: auto;
+      }
+
+      .container-btn {
+            justify-content: space-around;
+      }/**/
+
+      .copiar-btn {
+            height: auto;
+            align-items: flex-start;
+      }
+
+      .section2 {
+            width: 90%;
+            height: 30%;
+            margin: auto;
+            margin-top: 2rem;
+            margin-bottom: 5%;
+            justify-content: flex-start;
+            box-sizing: content-box;
+            overflow: auto;
+      }
+
+      .output {
+            height: 100%;
+            margin-top: 2rem;
+      }
+
+      .container-pj {
+            display: none;
       }
 }
 
