@@ -12,7 +12,7 @@ header {
 
 #logo {
       margin-top: 1em;
-      margin-left: 2.5em;
+
 }
 
 main {
@@ -200,7 +200,10 @@ footer {
 /*Tablet*/
 
 @media (max-width: 912px) {
+
+      /*fix Posc Logo at max 860px*/
       main {
+            height: 82%;
             flex-direction: column;
             justify-content: center;
       }
@@ -210,6 +213,10 @@ footer {
             height: 70%;
             margin-left: auto;
             margin-bottom: 2rem;
+      }
+
+      .button {
+            width: 21vw;
       }
 
       .container-btn {
@@ -243,3 +250,17 @@ footer {
 }
 
 /*Movil device*/
+
+@media (max-width: 414px) {
+      .container-btn {
+            flex-direction: column;
+            align-items: center;
+      }
+
+      .button {
+            width: 80vw;
+            margin-bottom: 1rem;
+      }
+}
+
+/*fix copy button
