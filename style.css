@@ -166,7 +166,7 @@ h2 {
       height: 20%;
       align-self: center;
       justify-content: center;
-
+      height: auto;
 
 }
 
@@ -174,7 +174,9 @@ h2 {
       margin-top: 1.7rem;
       color: #0A3871;
       background-color: #CED4DA;
-
+      position: absolute;
+      top: 70%;
+      left: 70%;
 }
 
 #copiar:active {
@@ -227,13 +229,16 @@ footer {
 
       }
 
-      /**/
-
-      .copiar-btn {
+      /*.copiar-btn {
             height: auto;
             position: absolute;
-            top: 76%;
+            top: 75.5%;
             left: 0%;
+      }*/
+
+      #copiar {
+            top: 75.5%;
+            left: 39.5%;
       }
 
       .section2 {
@@ -249,6 +254,7 @@ footer {
             margin-top: 2rem;
             margin-bottom: 1rem;
             padding-bottom: 300px;
+            /**/
       }
 
       .container-pj {
@@ -260,6 +266,10 @@ footer {
 /*Movil device*/
 
 @media (max-width: 414px) {
+      .section1 {
+            margin-bottom: 4rem;
+      }
+
       .container-btn {
             flex-direction: column;
             align-items: center;
@@ -268,6 +278,11 @@ footer {
       .button {
             width: 80vw;
             margin-bottom: 1rem;
+      }
+
+      #copiar {
+            top: 76.5%;
+            left: 10%;
       }
 }
 
