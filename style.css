@@ -197,7 +197,13 @@ footer {
       display: none;
 }
 
+.icon{
+      color: #0A3871;
+}
 
+.icon:active{
+      color: #ADB5BD;
+}
 /* Responsive!*/
 
 
@@ -285,5 +291,3 @@ footer {
             left: 10%;
       }
 }
-
-/*fix copy button
