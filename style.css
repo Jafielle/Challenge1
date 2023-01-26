@@ -191,6 +191,7 @@ footer {
       align-items: center;
       justify-content: center;
       color: #EFF1FA;
+      font-size: larger;
 }
 
 .hide {
@@ -199,6 +200,8 @@ footer {
 
 .icon{
       color: #0A3871;
+      transition: 0.2s;
+      margin: 0 5px;
 }
 
 .icon:active{
