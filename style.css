@@ -3,6 +3,7 @@
 body {
       height: 100vh;
       background-color: #EFF1FA;
+      transition: .4s;
 }
 
 header {
@@ -317,7 +318,7 @@ footer {
 
 .circle {
       width: 34px;
-      background-color: #F3F5FC;
+      background-color: #0A3871;
       height: 34px;
       border-radius: 50%;
       position: absolute;
@@ -332,6 +333,7 @@ footer {
 
 .input:checked + .label .circle{
       animation: toggleOn .4s linear forwards;
+      background-color: #F3F5FC;
 }
 
 @keyframes toggleOn {
