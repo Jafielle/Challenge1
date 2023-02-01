@@ -27,7 +27,7 @@ function updateMode() {
             section2Page.style.background = "white";
             h2Page1.style.color = "#343A40";
             section2Page.style.color = "#495057";
-            h2Page2.style.color = "343A40";
+            h2Page2.style.color = "#343A40";
       }
 }
 
