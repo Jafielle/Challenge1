@@ -7,8 +7,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="reset.css">
       <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="darkmode.css">
       <title>Encriptador</title>
       <link rel="icon" type="image/png" href="img/Logo.png" class="logo web_mg" />
+
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body>
@@ -44,19 +47,26 @@
                         <img src="img/Muñeco.png" alt="Alura pj" id="pj">
                   </div>
                   <div class="container-h2">
-                        <h2 class="title1">Ningún mensaje fue encontrado</h2>
+                        <h2 class="title1"> Ningún mensaje fue encontrado </h2>
                   </div>
                   <div class="container-p">
-                        <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                        <p> Ingresa el texto que deseas encriptar o desencriptar </p>
                   </div>
                   <div class="output hide">
-                        <h2 class="title2">Mensaje encriptado:</h2>
+                        <h2 class="title2"> Mensaje encriptado: </h2>
                         <p class="output-txt" id="to-copy"></p>
                         <div class="container-btn copiar-btn">
                               <input type="button" class="button" id="copiar" value="Copiar">
                         </div>
+
                   </div>
             </section>
+            <div class="checkmark hide">
+                  <lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_siy7b69y.json"
+                        background="transparent" speed="1" style="width: 40px; height: 40px;"
+                        loop autoplay></lottie-player>
+            </div>
+
       </main>
       <footer>
             <div>
@@ -75,6 +85,9 @@
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
       <script src="darkMode.js"></script>
+
+
+
 </body>
 
 </html>

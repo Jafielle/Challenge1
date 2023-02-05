@@ -10,6 +10,8 @@ const output = document.querySelector('.output');
 
 const outputTxt = document.querySelector('.output-txt');
 
+const checkmark = document.querySelector('.checkmark');
+
 //Buttons functionalities / Funcionalidades de los botones
 encryptBtn.onclick = encrypt;
 decryptBtn.onclick = decrypt;
@@ -105,7 +107,9 @@ function copy() {
       console.log(toCopy);
       navigator.clipboard.writeText(toCopy).then(
             function () {
-                  console.log("texto copiado"); 
+                  console.log("texto copiado");
+                  checkmark.classList.remove("hide");
+                  setTimeout(() => {checkmark.classList.add("hide")}, 2000);
             })
 } 
 //from https://stackoverflow.com/questions/60217202/copy-text-to-clipboard-now-that-execcommandcopy-is-obsolete

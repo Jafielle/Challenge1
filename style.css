@@ -1,5 +1,3 @@
-/*Base Desktop*/
-
 body {
       height: 100vh;
       background-color: #EFF1FA;
@@ -183,6 +181,12 @@ h2 {
       color: #F3F5FC;
 }
 
+.checkmark{
+      position: absolute;
+      top: 68%;
+      left: 86%;
+}
+
 footer {
       width: 100%;
       height: 50px;
@@ -218,13 +222,8 @@ footer {
 
 /* Responsive!*/
 
-
 /*Tablet*/
-
 @media (max-width: 912px) {
-
-      /*fix Posc Logo at max 860px*/
-
       main {
             height: 82%;
             flex-direction: column;
@@ -244,15 +243,7 @@ footer {
 
       .container-btn {
             justify-content: space-around;
-
       }
-
-      /*.copiar-btn {
-            height: auto;
-            position: absolute;
-            top: 75.5%;
-            left: 0%;
-      }*/
 
       #copiar {
             top: 75.5%;
@@ -282,7 +273,6 @@ footer {
 }
 
 /*Movil device*/
-
 @media (max-width: 414px) {
       .section1 {
             margin-bottom: 4rem;
@@ -301,68 +291,5 @@ footer {
       #copiar {
             top: 76.5%;
             left: 10%;
-      }
-}
-
-/* Dark mode */
-.toggle {
-      display: flex;
-      justify-content: center;
-}
-
-.input {
-      visibility: hidden;
-}
-
-.label {
-      position: absolute;
-      top: 15px;
-      width: 50px;
-      height: 30px;
-      background-color: #87ceeb;
-      border-radius: 20px;
-      box-shadow: inset 0px 5px 15px rgba(0, 0, 0, .4);
-      cursor: pointer;
-}
-
-.circle {
-      width: 24px;
-      height: 24px;
-      background-color: #FDDA0D;
-      border-radius: 50%;
-      box-shadow: inset 5px 5px 10px rgba(213,171,9, .9);
-      position: absolute;
-      top: 3px;
-      left: 3px;
-      animation: toggleOff .4s linear forwards;
-}
-
-.input:checked+.label {
-      background-color: #343A40;
-}
-
-.input:checked + .label .circle{
-      animation: toggleOn .4s linear forwards;
-      background-color: #F3F5FC;
-      box-shadow: inset -5px -5px 10px rgba(0, 0, 0, .9);
-}
-
-@keyframes toggleOn {
-      0% {
-            transform: translateX(0px);
-      }
-
-      100% {
-            transform: translateX(20px);
-      }
-}
-
-@keyframes toggleOff {
-      0% {
-            transform: translateX(20px);
-      }
-
-      100% {
-            transform: translateX(0px);
       }
 }
