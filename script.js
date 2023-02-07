@@ -12,6 +12,9 @@ const outputTxt = document.querySelector('.output-txt');
 
 const checkmark = document.querySelector('.checkmark');
 
+
+var restrictions = /^[a-z]+$/;
+
 //Buttons functionalities / Funcionalidades de los botones
 encryptBtn.onclick = encrypt;
 decryptBtn.onclick = decrypt;
@@ -35,27 +38,35 @@ function hideFront() {
 function encryptTxt(msg) {
       const txt = msg;
       let finalTxt = "";
-      for (let i = 0; i < txt.length; i++) {
-            if (txt[i] == "a") {
-                  finalTxt = finalTxt + "ai"
+      if (restrictions.test(msg)) {
+            pass = true;
+      } else { alert('solo minúsculas y sin acentos') }
+      if (pass) {
+            for (let i = 0; i < txt.length; i++) {
+                  if (txt[i] == "a") {
+                        finalTxt = finalTxt + "ai"
+                  }
+                  if (txt[i] == "A") {
+                        finalTxt = finalTxt + "ai"
+                  }
+                  else if (txt[i] == "e") {
+                        finalTxt = finalTxt + "enter"
+                  }
+                  else if (txt[i] == "i") {
+                        finalTxt = finalTxt + "imes"
+                  }
+                  else if (txt[i] == "o") {
+                        finalTxt = finalTxt + "ober"
+                  }
+                  else if (txt[i] == "u") {
+                        finalTxt = finalTxt + "ufat"
+                  }
+                  else {
+                        finalTxt = finalTxt + txt[i]
+                  }
             }
-            else if (txt[i] == "e") {
-                  finalTxt = finalTxt + "enter"
-            }
-            else if (txt[i] == "i") {
-                  finalTxt = finalTxt + "imes"
-            }
-            else if (txt[i] == "o") {
-                  finalTxt = finalTxt + "ober"
-            }
-            else if (txt[i] == "u") {
-                  finalTxt = finalTxt + "ufat"
-            }
-            else {
-                  finalTxt = finalTxt + txt[i]
-            }
+            return finalTxt;
       }
-      return finalTxt;
 }//to Encrypt text/ para encriptar el texto
 
 function encrypt() {
@@ -109,9 +120,9 @@ function copy() {
             function () {
                   console.log("texto copiado");
                   checkmark.classList.remove("hide");
-                  setTimeout(() => {checkmark.classList.add("hide")}, 2000);
+                  setTimeout(() => { checkmark.classList.add("hide") }, 2000);
             })
-} 
+}
 //from https://stackoverflow.com/questions/60217202/copy-text-to-clipboard-now-that-execcommandcopy-is-obsolete
 
 //Document.execCommand("copy") Deprecated
