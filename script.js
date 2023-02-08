@@ -40,17 +40,8 @@ function encryptTxt(msg) {
       let finalTxt = "";
       if (restrictions.test(msg)) {
             pass = true;
-      } else {
-            alert('solo minúsculas y sin acentos')
-            area.value = ""
-            area.focus()
-      }
-      if (pass) {
             for (let i = 0; i < txt.length; i++) {
                   if (txt[i] == "a") {
-                        finalTxt = finalTxt + "ai"
-                  }
-                  if (txt[i] == "A") {
                         finalTxt = finalTxt + "ai"
                   }
                   else if (txt[i] == "e") {
@@ -70,8 +61,14 @@ function encryptTxt(msg) {
                   }
             }
             return finalTxt;
+      } else {
+            alert('solo minúsculas y sin acentos')
+            area.value = ""
+            area.focus()
       }
-}//to Encrypt text/ para encriptar el texto
+
+}
+//to Encrypt text/ para encriptar el texto
 
 function encrypt() {
       hideFront();
