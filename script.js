@@ -40,7 +40,11 @@ function encryptTxt(msg) {
       let finalTxt = "";
       if (restrictions.test(msg)) {
             pass = true;
-      } else { alert('solo minúsculas y sin acentos') }
+      } else {
+            alert('solo minúsculas y sin acentos')
+            area.value = ""
+            area.focus()
+      }
       if (pass) {
             for (let i = 0; i < txt.length; i++) {
                   if (txt[i] == "a") {
