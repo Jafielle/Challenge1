@@ -79,32 +79,39 @@ function encrypt() {
 function decryptTxt(msg) {
       const txt = msg;
       let finalTxt = "";
-      for (let i = 0; i < txt.length; i++) {
-            if (txt[i] == "a") {
-                  finalTxt = finalTxt + "a";
-                  i = i + 1;
+      if (restrictions.test(msg)) {
+            pass = true;
+            for (let i = 0; i < txt.length; i++) {
+                  if (txt[i] == "a") {
+                        finalTxt = finalTxt + "a";
+                        i = i + 1;
+                  }
+                  else if (txt[i] == "e") {
+                        finalTxt = finalTxt + "e";
+                        i = i + 4;
+                  }
+                  else if (txt[i] == "i") {
+                        finalTxt = finalTxt + "i";
+                        i = i + 3;
+                  }
+                  else if (txt[i] == "o") {
+                        finalTxt = finalTxt + "o";
+                        i = i + 3;
+                  }
+                  else if (txt[i] == "u") {
+                        finalTxt = finalTxt + "u";
+                        i = i + 3;
+                  }
+                  else {
+                        finalTxt = finalTxt + txt[i]
+                  }
             }
-            else if (txt[i] == "e") {
-                  finalTxt = finalTxt + "e";
-                  i = i + 4;
-            }
-            else if (txt[i] == "i") {
-                  finalTxt = finalTxt + "i";
-                  i = i + 3;
-            }
-            else if (txt[i] == "o") {
-                  finalTxt = finalTxt + "o";
-                  i = i + 3;
-            }
-            else if (txt[i] == "u") {
-                  finalTxt = finalTxt + "u";
-                  i = i + 3;
-            }
-            else {
-                  finalTxt = finalTxt + txt[i]
-            }
+            return finalTxt;
+      } else {
+            alert('solo minúsculas y sin acentos')
+            area.value = ""
+            area.focus()
       }
-      return finalTxt;
 }//to Decrypt text/ para desencriptar el texto
 
 function decrypt() {
@@ -121,6 +128,8 @@ function copy() {
             function () {
                   console.log("texto copiado");
                   checkmark.classList.remove("hide");
+                  area.value = ""
+                  area.focus()
                   setTimeout(() => { checkmark.classList.add("hide") }, 2000);
             })
 }
