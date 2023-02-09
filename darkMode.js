@@ -3,6 +3,8 @@ const inputSwitch = document.querySelector(".input")
 const bodyPage = document.querySelector("body")
 console.log(inputSwitch.checked);
 
+const decryptDark = document.querySelector("#desencriptar")
+
 const section2Page = document.querySelector(".section2")
 
 const h2Page1 = document.querySelector(".title1")
@@ -17,6 +19,8 @@ updateMode();
 function updateMode() {
       if (inputSwitch.checked) {
             bodyPage.style.background = "black";
+            decryptDark.style.background = "#495057";
+            decryptDark.style.color = "#EFF1FA";
             section2Page.style.background = "#343A40";
             h2Page1.style.color = "white";
             section2Page.style.color = "#AAB2D5";
@@ -24,6 +28,8 @@ function updateMode() {
       }
       else {
             bodyPage.style.background = "#EFF1FA";
+            decryptDark.style.background = "#E9ECF8";
+            decryptDark.style.color = "#0A3871";
             section2Page.style.background = "white";
             h2Page1.style.color = "#343A40";
             section2Page.style.color = "#495057";

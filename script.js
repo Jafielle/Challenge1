@@ -13,7 +13,7 @@ const outputTxt = document.querySelector('.output-txt');
 const checkmark = document.querySelector('.checkmark');
 
 
-var restrictions = /^[a-z]+$/;
+const restrictions = /^[a-z ]+$/; //regular expresion or regExp, it allows lowercase alphabeth characters (a-z) and spaces ["a-z"" "]
 
 //Buttons functionalities / Funcionalidades de los botones
 encryptBtn.onclick = encrypt;

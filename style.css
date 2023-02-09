@@ -1,6 +1,6 @@
 body {
       height: 100vh;
-      background-color: #EFF1FA;
+      /*background-color: #EFF1FA; Redundante con js*/
       transition: .4s;
 }
 
@@ -84,10 +84,11 @@ label {
       background-color: #0A3871;
 }
 
-#desencriptar {
+/*#desencriptar {
       color: #0A3871;
       background-color: #E9ECF8;
-}
+} Redundante con javascript
+*/
 
 #encriptar:active,
 #desencriptar:active {
@@ -97,7 +98,7 @@ label {
 .section2 {
       width: 25%;
       height: 100%;
-      background-color: white;
+      /*background-color: white; Redundante con js*/
       border-radius: 20px;
       margin-top: -2.5%;
       margin-right: 10%;
@@ -130,7 +131,7 @@ label {
 }
 
 h2 {
-      color: #343A40;
+      /*color: #343A40; Redundante con js*/
       font-weight: bold;
       font-size: 1.5em;
 }
