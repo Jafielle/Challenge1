@@ -1,6 +1,6 @@
 .toggle {
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
 }
 
 .input {
@@ -9,10 +9,15 @@
 
 .label {
       position: absolute;
-      top: 15px;
+      top: 5px;
+      right: 5px;
       width: 50px;
-      height: 30px;
-      background-color: #87ceeb;
+      height: 28px;
+      background-image: url(https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80);
+      /*#343A40;*/
+      /* Foto de <a href="https://unsplash.com/de/@kaip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kai Pilger</a> en <a href="https://unsplash.com/es/fotos/Ef6iL87-vOA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  */
+      background-size: cover;
       border-radius: 20px;
       box-shadow: inset 0px 5px 15px rgba(0, 0, 0, .4);
       cursor: pointer;
@@ -21,23 +26,35 @@
 .circle {
       width: 24px;
       height: 24px;
-      background-color: #FDDA0D;
+      background-image: url(https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+      /*#F3F5FC;*/
+      /*Foto de <a href="https://unsplash.com/@billy_huy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Billy Huynh</a> en <a href="https://unsplash.com/es/fotos/v9bnfMCyKbg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  */
+      background-size: cover;
       border-radius: 50%;
-      box-shadow: inset 5px 5px 10px rgba(213,171,9, .9);
+      box-shadow: inset -5px -5px 10px rgba(0, 0, 0, .9);
       position: absolute;
-      top: 3px;
+      top: 2px;
       left: 3px;
       animation: toggleOff .4s linear forwards;
 }
 
 .input:checked+.label {
-      background-color: #343A40;
+      background-image: url(https://images.unsplash.com/photo-1443694910004-3567042689f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80);
+      /*#87adeb;*/
+      /*Foto de <a href="https://unsplash.com/@kaushikpanchal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kaushik Panchal</a> en <a href="https://unsplash.com/es/fotos/0juC5JIhPks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  */
+      background-size: cover;
 }
 
-.input:checked + .label .circle{
+.input:checked+.label .circle {
       animation: toggleOn .4s linear forwards;
-      background-color: #F3F5FC;
-      box-shadow: inset -5px -5px 10px rgba(0, 0, 0, .9);
+      background-image: url(https://images.unsplash.com/photo-1594315590298-329f49c8dcb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+      /*#fdcd0d;*/
+      /*Foto de <a href="https://unsplash.com/@rajiv63?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rajiv Bajaj</a> en <a href="https://unsplash.com/es/fotos/i4QIqfcTkN8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+*/
+      background-size: cover;
+      box-shadow: inset 5px 5px 10px rgba(167, 134, 6, 0.9);
 }
 
 @keyframes toggleOn {
